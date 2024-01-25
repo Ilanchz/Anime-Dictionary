@@ -164,6 +164,15 @@ footer {
     height :20px;
     padding: 5px;
     font-family: rockwell;
+    text-align: center;
+}
+header {
+    background-color: black;
+    color: lightskyblue;
+    height :20px;
+    padding: 5px;
+    font-family: rockwell;
+    text-align: center;
 }
 
 
