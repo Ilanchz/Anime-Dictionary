@@ -1,17 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import GetAnime from './Anime';
+import RenderPage from './Render';
+import {GetGenres} from "./Anime";
+import {saveToLocalStorage} from './Anime';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+async function fetchData(Search) {
+  console.log(process.env.REACT_APP_api_key);
+  let GenreList=[]
+  GenreList= await GetGenres();
+  saveToLocalStorage("genres",GenreList);
+  let PreparedList=[]
+  PreparedList= await GetAnime(Search);
+  RenderPage(PreparedList);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+}
+
+fetchData("");
+
+
+//Main Render App here

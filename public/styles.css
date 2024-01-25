@@ -1,0 +1,169 @@
+/* Include the styles here */
+
+.MainFrame{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.NavBar{
+    background-image: linear-gradient(to right, black ,slategrey);
+    padding : 10px;
+    overflow:hidden;
+
+}
+
+.NavBar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+
+.NavBar> ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+.NavBar> button:hover{
+    background-color: black;
+    color: white;
+}
+
+.searchBar{
+    margin:10px;
+    padding: 5px;
+    float:right;
+    gap:10px;
+    width: 460px;
+    background-color: white;
+    border-radius: 10px;
+    outline: groove;
+}
+
+#search-button{
+    border-radius:50%;
+    background-color: blueviolet;
+    color:white;
+    height:30px;
+    border: 0px blueviolet;
+    float:right;
+}
+
+
+
+#search{
+    border-radius:0px;
+    width:300px;
+    height:30px;
+    font-size: 14px;
+    border:3px;
+    outline: none;
+}
+
+#genre-select{
+    float:right;
+    background-color: black;
+    color:white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.ContentCards{
+    display:inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-content: flex-start;
+    background-image: linear-gradient(to right, black ,slategrey);
+    padding: 20px;
+
+}
+
+.AnimeCard{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width:200px;
+    color:white;
+    transition: padding 0.3s ease-in-out;
+    outline: 2px solid white;
+    gap: 5px;
+    background-color: black;
+}
+
+
+.AnimeCard:hover {
+    background-color: darkorchid;
+    color:white;
+    padding: 10px;
+    
+}
+
+
+.Error-Image{
+    align-self: center;
+}
+
+#Error-Text{
+    align-self: center;
+    font-size: 20px;
+    font-family: rockwell;
+}
+
+.Website-Title{
+    background-color: blueviolet;
+    padding: 10px;
+    color:aliceblue;
+    font-family: Georgia, serif;
+    border-radius: 7px;
+}
+
+.anime-page{
+    padding: 100px;
+    display: flex;
+    gap: 10px;
+    background-image: linear-gradient(to right, black ,grey);
+    color: white;
+    font-family: oswald;
+    height: 100vh;
+}
+
+.anime-page > img{
+    outline-style:groove;
+    margin: 10px;
+}
+
+.anime-page-data{
+    list-style-type: None;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    word-spacing: 5px;
+    outline: 5px solid white;
+    padding: 50px;
+}
+
+.body{
+    padding: 0px;
+    margin:0px;
+}
+
+.html{
+    padding: 0px;
+    margin:0px;
+}
+footer {
+    background-color: black;
+    color: lightskyblue;
+    height :20px;
+    padding: 5px;
+    font-family: rockwell;
+}
+
+
