@@ -10,7 +10,6 @@ function NavigationBar(props){
     async function SearchRequest(event){
         const searchquery=document.querySelector("#search").value;
         const selectedgenre=document.querySelector("#genre-select").value;
-        console.log(searchquery);
         let PreparedList=await GetAnime(searchquery,selectedgenre);
         RenderPage(PreparedList);
         
@@ -20,7 +19,7 @@ function NavigationBar(props){
     let GenreList=getFromLocalStorage("genres");
 
     return <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
+        <div className="container-fluid bg-danger d-flex align-items-center" >
             <a className="navbar-brand" href="#">Anime Jisho</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -35,8 +34,8 @@ function NavigationBar(props){
                 </li>
             </ul>
             <form className="d-flex" role="search">
-                <input className="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search"/>
-                <button type="button" className="btn btn-outline-success" onClick={SearchRequest}>Search</button>
+                <input className="form-control" id="search" type="search" placeholder="Search" aria-label="Search"/>
+                <button type="button" className="btn btn-success" onClick={SearchRequest}>Search</button>
             </form>
             </div>
         </div>
