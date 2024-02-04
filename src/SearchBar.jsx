@@ -16,7 +16,7 @@ function SearchBar(){
     let GenreList=getFromLocalStorage("genres");
 
     return <div className="searchBar">
-                <input type="text" id="search" name="searchname" placeholder="Search Anime"></input>
+                <input type="text" id="search" name="searchname" placeholder="Search Anime" height="50px"></input>
                 <input type="button" onClick={SearchRequest} id="search-button" value="Go"></input>
                 <GenreSelect genres={GenreList}/>
             </div>;

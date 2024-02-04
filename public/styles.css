@@ -6,11 +6,8 @@
     flex-wrap: nowrap;
 }
 
-.NavBar{
-    background-image: linear-gradient(to right, black ,slategrey);
-    padding : 10px;
-    overflow:hidden;
-
+.custom-height{
+    height: 50px;
 }
 
 .NavBar a {
@@ -65,36 +62,29 @@
     outline: none;
 }
 
-#genre-select{
-    float:right;
-    background-color: black;
-    color:white;
-    padding: 5px;
-    border-radius: 10px;
-}
 
 .ContentCards{
     display:inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     align-content: flex-start;
     background-image: linear-gradient(to right, black ,slategrey);
     padding: 20px;
 
 }
 
-.AnimeCard{
-    display:flex;
+.AnimeCard {
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    width:200px;
-    color:white;
+    width: 200px;
+    color: white;
     transition: padding 0.3s ease-in-out;
     outline: 2px solid white;
     gap: 5px;
     background-color: black;
+    box-sizing: border-box; /* Include padding and border in total width and height */
 }
 
 
@@ -161,7 +151,7 @@
 footer {
     background-color: black;
     color: lightskyblue;
-    height :30px;
+    height :40px;
     padding: 5px;
     font-family: rockwell;
     text-align: center;
@@ -169,7 +159,7 @@ footer {
 header {
     background-color: black;
     color: lightskyblue;
-    height :20px;
+    height :40px;
     padding: 5px;
     font-family: rockwell;
     text-align: center;
